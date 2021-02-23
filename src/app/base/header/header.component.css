@@ -1,0 +1,9 @@
+::ng-deep .header-title {
+  text-align: center;
+}
+
+::ng-deep .history{
+  height: 50px;
+  padding: 5px !important;
+}
+

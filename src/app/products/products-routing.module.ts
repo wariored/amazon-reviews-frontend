@@ -4,8 +4,8 @@ import {ProductReviewsComponent} from "./product-reviews/product-reviews.compone
 import {ReviewsHistoryComponent} from "./reviews-history/reviews-history.component";
 
 const routes: Routes = [
+  {path: '', component: ReviewsHistoryComponent},
   {path: ':productId/reviews', component: ProductReviewsComponent},
-  {path: 'history', component: ReviewsHistoryComponent},
 ];
 
 
