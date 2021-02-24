@@ -8,7 +8,8 @@ export class Product{
   reviews: {
     description: string,
     title: string,
-    ratingValue: string,
+    reviewDate: Date,
+    ratingValue: number,
     customer: {
       name: string,
       country: {

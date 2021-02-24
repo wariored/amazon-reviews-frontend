@@ -14,7 +14,9 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
 import {FlexLayoutModule} from "@angular/flex-layout";
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
+import {LoaderService} from "./services/loader.service";
+import {LoaderInterceptor} from "./services/loader.interceptor";
 
 @NgModule({
   declarations: [
@@ -35,7 +37,6 @@ import {HttpClientModule} from "@angular/common/http";
     MatFormFieldModule,
     MatInputModule,
     FlexLayoutModule,
-    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

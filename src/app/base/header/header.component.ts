@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   }
 
   onSubmit(){
-    this.router.navigateByUrl('products/'+ this.productId + '/reviews');
+    let url = 'products/'+ this.productId + '/reviews';
+    this.router.navigateByUrl(url);
   }
-
 }

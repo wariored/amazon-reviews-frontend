@@ -1,4 +1,7 @@
+<mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+<div class="page-title">Request histories</div>
 <div class="history-container">
+  <div *ngIf="products.length == 0">An error occurred while fetching data.</div>
   <mat-form-field style="margin-top: 15px;">
     <mat-label>Filter</mat-label>
     <input matInput (keyup)="applyFilter($event)" placeholder="Ex. i3axum" #input>
